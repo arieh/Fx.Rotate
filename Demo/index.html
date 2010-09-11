@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Fx.Rotate Demo</title>
+    <style type="text/css">
+        #wrap{
+            padding:70px;
+        }
+        #test{
+            width:200px;
+            height:200px;
+            border:1px solid;
+            background:#abc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fx.Rotate Demo</h1>
+
+	<div id="wrap">
+		<div id="test"></div>
+	</div>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js'></script>
+    <script type="text/javascript" src="../Source/Fx.Rotate.js"></script>
+    <script type="text/javascript">
+    
+    var rotate = new Fx.Rotate('test',{duration:'long'});
+    rotate.start(0,55);
+    </script>
+</body>
+</html>
