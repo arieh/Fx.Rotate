@@ -2,6 +2,6 @@ name: Fx.Rotate
 author: arieh
 category: Effects
 tags: [rotation, transform, matrix, styles, fx]
-#demo: http://arieh.github.com/Mootools-DateRange/
+demo: http://tests.arieh.co.il/rotate.html
 current: 0.1
 #docs: http://moodocs.net/arieh/date-range/daterange
