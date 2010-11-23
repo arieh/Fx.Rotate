@@ -8,7 +8,7 @@ authors:
 - Arieh Glazer
 
 requires:
-- core/1.2.4: Element,Fx,Class
+- core/1.3: Element,Fx,Class
 
 provides: [Fx.Rotate]
 
