@@ -16,6 +16,8 @@ provides: [Fx.Rotate]
 */
 (function ($,window,undef){
 
+var webkit = Browser.chrome || Browser.safari || Browser.Platform.ios || Browser.Platform.webos;
+
 /** 
  * Matrix function taken from http://www.boogdesign.com/examples/transforms/matrix-calculator.html
  */
@@ -23,7 +25,7 @@ provides: [Fx.Rotate]
 Fx.Rotate = new Class({
     Extends : Fx
     , element : null
-    , prefix : (Browser.Engine.gecko) ? 'moz' : (Browser.Engine.webkit) ? 'webkit' : (Browser.Engine.presto) ? 'o' : 'ms'
+    , prefix : (Browser.firefox) ? 'moz' : (webkit) ? 'webkit' : (Browser.opera) ? 'o' : 'ms'
     , initialize : function(el,options){
         this.element = $(el);
         
